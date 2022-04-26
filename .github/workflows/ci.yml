@@ -24,7 +24,7 @@ jobs:
         cache: maven
         
     - name: lint
-      run: mvn checkstyle:check
+      run: mvn checkstyle:checkstyle
         
     - name: Build with Maven
       run: mvn -B package --file pom.xml

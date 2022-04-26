@@ -11,12 +11,9 @@ import lombok.Setter;
 
 public class Captcha {
 
-    @Setter
-    @Getter
-    private String code;
+  @Setter @Getter private String code;
 
-    public Captcha(String code) {
-        this.code = code;
-    }
-
+  public Captcha(String code) {
+    this.code = code;
+  }
 }

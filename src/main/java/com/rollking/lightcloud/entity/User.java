@@ -3,8 +3,8 @@ package com.rollking.lightcloud.entity;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 
-import javax.persistence.*;
-
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 /*
  * @author Bernard
@@ -20,15 +20,13 @@ import javax.persistence.*;
 @Entity
 @JsonIgnoreProperties({"handler", "hibernateLazyInitializer"})
 public class User {
-    @Id
-    private int idx;
+  @Id private int idx;
 
-    private String email;
+  private String email;
 
-    private String password;
+  private String password;
 
-    private String username;
+  private String username;
 
-    private long used;
+  private long used;
 }
-
