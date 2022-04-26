@@ -4,12 +4,17 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
-@EntityScan
+/** The type Light cloud application. */
+
 @SpringBootApplication
 public class LightCloudApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(LightCloudApplication.class, args);
-    }
-
+  /**
+   * The entry point of application.
+   *
+   * @param args the input arguments
+   */
+  public static void main(final String[] args) {
+    SpringApplication.run(LightCloudApplication.class, args);
+  }
 }
