@@ -22,7 +22,10 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-        
+    
+    - name: lint
+      run: mvn --version
+    
     - name: lint
       run: mvn checkstyle:checkstyle
         
